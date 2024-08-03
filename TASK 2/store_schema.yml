@@ -16,3 +16,22 @@ models:
         description: "Total revenue for the day"
         tests:
           - not_null
+
+  - name: daily_product_sales
+    description: "Aggregated sales metrics per product"
+    columns:
+      - name: order_date
+        tests:
+          - not_null
+      - name: product_name
+        tests:
+          - not_null
+      - name: brand_name
+        tests:
+          - not_null
+      - name: qty_sold
+        tests:
+          - not_null
+      - name: revenue
+        tests:
+          - not_null

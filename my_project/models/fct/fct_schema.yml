@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fct_per_brand_daily_sales
+    columns:
+      - name: brand_name
+        tests:
+          - not_null
+      - name: order_date
+        tests:
+          - not_null
+      - name: total_quantity
+        tests:
+          - not_null
+      - name: total_revenue
+        tests:
+          - not_null
